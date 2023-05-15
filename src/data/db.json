@@ -1,0 +1,50 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "code": "SP1",
+      "name": "Chuột",
+      "date": "05/05/2022",
+      "quantity": 12,
+      "productType": 1
+    },
+    {
+      "id": 2,
+      "code": "SP2",
+      "name": "Máy tính ",
+      "date": "05/04/2023",
+      "quantity": "6",
+      "productType": 3
+    },
+    {
+      "id": 3,
+      "code": "SP3",
+      "name": "Bàn phím",
+      "date": "09/12/2021",
+      "quantity": "7",
+      "productType": 2
+    },
+    {
+      "id": 4,
+      "code": "SP4",
+      "name": "Tai nghe ",
+      "date": "05/04/2023",
+      "quantity": "13",
+      "productType": 2
+    }
+  ],
+  "productTypes": [
+    {
+      "id": 1,
+      "name": "Thường"
+    },
+    {
+      "id": 2,
+      "name": "Trung cấp"
+    },
+    {
+      "id": 3,
+      "name": "Cao cấp"
+    }
+  ]
+}

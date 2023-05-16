@@ -29,7 +29,7 @@ export const findProductById = async (id) => {
 }
 export const editProduct = async (product) => {
     try {
-        await axios.put(`http://localhost:8080/products/${product.id}`, {...product});
+        await axios.put(`http://localhost:8080/products`, {...product});
     } catch (err) {
         console.log(err)
     }

@@ -22,6 +22,8 @@ export function ListProduct() {
     };
     const handleDeleteBook = async () => {
         await deleteProduct(bookDetail.id);
+        const response = await findAll(nameAndPage);
+        setListProduct(response.content);
         alert("Xoá sản phẩm thành công");
     };
     useEffect(() => {
@@ -82,7 +84,8 @@ export function ListProduct() {
                                             {product.productType.name}
                                         </td>
                                         <td>
-                                            <Link to={`/edit/${product.id}`} className={'btn btn-primary'}>Sửa</Link>
+                                            <Link to={`/edit/${product.id}`}
+                                                  className={'btn btn-primary me-3'}>Sửa</Link>
                                             <button
                                                 type="button"
                                                 className="btn btn-danger"
